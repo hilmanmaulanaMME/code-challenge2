@@ -5,28 +5,29 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 
 function Testimonials() {
-    const [Testi, setTesti] = useState(null)
+    const [Testimonials, setTestimonials] = useState([])
 
     useEffect(() => {
-        getTesti()
-    },)
+        getTestimonials()
+    },[])
+
+    useEffect(() => {
+    },[Testimonials])
 
 
 
-    async function getTesti() {
+    async function getTestimonials() {
         let config = {
-            url:'http://localhost:3000/api/contentful/',
+            url:'http://localhost:3000/api/contentful-testimonials/',
             method:'get',
             headers:{
                 'Content-Type':'application/json'
-                
             }
         }
 
         try {
-            getTesti = await axios(config)
-            setTesti(getTesti.data.fields.topSection[0].fields.quote.content[0].content[0].content[0].value)
-            console.log(getTesti)
+            getTestimonials = await axios(config)
+            setTestimonials(getTestimonials.data.items)
         } catch (error) {
             console.log(error)
         }
@@ -40,8 +41,18 @@ function Testimonials() {
                 </Box>
             </Box>
             <Flex justify='center'>
-                <SimpleGrid spacing='30px' margin='30px' columns={[1, 2, 3]}>
-                
+                <SimpleGrid spacing='30px' margin='30px' columns={[1,2,3]}>
+                    {
+                        Testimonials?.map((data,i) => {
+                            console.log(data)
+                            return (
+                                <CardBox
+                                    title={data.fields.name}
+                                    desc={data?.fields?.descriptions}
+                                />
+                            )
+                        })
+                    }
                 </SimpleGrid>
             </Flex>
         </Box>

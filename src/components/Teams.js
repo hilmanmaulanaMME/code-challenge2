@@ -44,7 +44,7 @@ function Teams() {
 
     async function getUser() {
         let config = {
-            url:'https://randomuser.me/api/',
+            url:'https://randomuser.me/api/?results=10',
             method:'get',
             headers:{
                 'Content-Type':'application/json'
@@ -67,8 +67,7 @@ function Teams() {
                 </Box>
             </Box>
             <Flex justify='center'>
-                
-                <SimpleGrid spacing='30px' margin='30px' columns={[1, 2, 3]}>
+                <SimpleGrid spacing='30px' margin='30px' columns={[1,2,3,4]}>
                     {
                         dataOk?.map((data, i) => {
                             return (
@@ -76,7 +75,7 @@ function Teams() {
                                     key={i}
                                     firstName={data.name.first}
                                     lastName={data.name.last}
-                                    // desc={data.desc}
+                                    desc={data.email}
                                     // excerpt={data.excerpt}
                                     // id={data.id}
                                     thumbnail={data.picture.large}

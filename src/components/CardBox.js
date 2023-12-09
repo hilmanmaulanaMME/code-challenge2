@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button} from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Image, AspectRatio } from '@chakra-ui/react'
 import Link from 'next/link'
 
 function CardBox({title,excerpt,desc,id,thumbnail,hreflink}) {
@@ -8,6 +8,7 @@ function CardBox({title,excerpt,desc,id,thumbnail,hreflink}) {
                 <Heading size='md'>{title}</Heading>
             </CardHeader>
             <CardBody>
+                <Image src={thumbnail} maxW='100%' ratio={4 / 3} maxH='250px'/>
                 <Text>{desc}</Text>
             </CardBody>
             <CardFooter>

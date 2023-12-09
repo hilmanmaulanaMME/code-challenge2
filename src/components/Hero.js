@@ -16,10 +16,10 @@ function Hero() {
             justifyContent="center"
             alignItems="center">
             <Heading as="h1" fontSize={{ base: '2xl', md: '4xl' }} mb={4} textShadow="2px 2px 4px rgba(0, 0, 0, 0.90)">
-                Welcome to My Website
+                Welcome to Audio Signature
             </Heading>
             <Text fontSize={{ base: 'md', md: 'lg' }} mb={8} textShadow="2px 2px 4px rgba(0, 0, 0, 0.90)">
-                Explore the amazing features of our platform.
+                Where Music comes to life
             </Text>
         </Box>
     );

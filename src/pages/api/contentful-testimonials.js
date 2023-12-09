@@ -8,7 +8,9 @@ const client = createClient({
 
 export default async function handler(req, res) {
     try {
-        const entry = await client.getEntries();
+        const entry = await client.getEntries({
+            content_type: 'testimonials'
+        });
         res.status(200).json(entry);
     } catch (error) {
         console.error(error);
