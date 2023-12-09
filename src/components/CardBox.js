@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Image, AspectRatio } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Image, AspectRatio, Flex } from '@chakra-ui/react'
 import Link from 'next/link'
 
 function CardBox({title,excerpt,desc,id,thumbnail,hreflink}) {
@@ -7,11 +7,13 @@ function CardBox({title,excerpt,desc,id,thumbnail,hreflink}) {
             <CardHeader>
                 <Heading size='md' textAlign='center'>{title}</Heading>
             </CardHeader>
-            <CardBody justifyContent='center'>
-                <Image src={thumbnail} maxW='100%' ratio={4 / 3} maxH='250px' borderRadius='15px'/>
+            <CardBody>
+                <Flex justify='center'>
+                    <Image src={thumbnail} maxW='100%' ratio={4 / 3} maxH='250px' borderRadius='15px' alt='img-CardBox'/>
+                </Flex>
                 <Text marginTop='10px'>{desc}</Text>
             </CardBody>
-            <CardFooter>
+            <CardFooter  justify='center'>
                 <Link href={`${hreflink}`}>
                     <Button mr={1}>View Here</Button>
                 </Link>

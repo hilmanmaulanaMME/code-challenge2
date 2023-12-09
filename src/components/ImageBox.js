@@ -12,8 +12,7 @@ function ImageBox({firstName, lastName ,excerpt,desc,id,thumbnail,hreflink}) {
             </CardHeader>
             <CardBody  justifyContent='center'>
                 <Image borderRadius='full' boxSize='150px'
-                    src={thumbnail}
-                />
+                    src={thumbnail} alt='img-ImageBox'/>
             </CardBody>
         </Card>
     )

@@ -27,7 +27,7 @@ function Services() {
         }
 
         try {
-            getServices = await axios(config)
+            let getServices = await axios(config)
             setServices(getServices.data.items)
         } catch (error) {
             console.log(error)
@@ -48,6 +48,7 @@ function Services() {
                             console.log(data)
                                 return (
                                 <CardBox
+                                    key={i}
                                     title={data.fields.services}
                                     desc={data?.fields?.descriptions}
                                     thumbnail={data.fields.image.fields.file.url}

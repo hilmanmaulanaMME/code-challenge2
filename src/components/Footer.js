@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Footer() {
     return (
-        <Flex as="foot" align="center" justify="center" p={4} bg="black" color="white" borderTop='3px red solid'>
+        <Flex as="foot" align="center" justify="center" p={4} bg="black" color="white" borderTop='1px red solid'>
             <Box display={{ base: 'none', md: 'flex' }}>
                 <Link href="/aboutus">
                     <Text mr={4}>About Us</Text>

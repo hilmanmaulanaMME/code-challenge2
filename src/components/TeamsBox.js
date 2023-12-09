@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, Heading, Button, Image, Text } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Heading, Button, Image, Text, Flex, Box } from '@chakra-ui/react'
 import Link from 'next/link'
 
 
@@ -11,10 +11,16 @@ function TeamsBox({firstName, lastName ,excerpt,email,id,thumbnail,hreflink}) {
                 <Heading size='md' textAlign='center'>{firstName} {lastName}</Heading>
             </CardHeader>
             <CardBody>
-                <Image borderRadius='full' boxSize='150px'src={thumbnail}/>
+                <Flex justify='center'>
+                    <Image borderRadius='full' boxSize='150px'src={thumbnail} alt='img-TeamsBox'/>
+                </Flex>
             </CardBody>
             <CardFooter>
-                <Text  size='md' textAlign='center'>{email}</Text>
+                <Box width='100%' >
+                    <Flex justify='center'>
+                        <Text size='md' textAlign='center'>{email}</Text>
+                    </Flex>
+                </Box>
             </CardFooter>
         </Card>
     )

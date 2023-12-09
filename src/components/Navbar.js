@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Navbar() {
     return (
-        <Flex as="nav" align="center" justify="space-between" p={4} bg="black" color="white" borderBottom='3px solid' borderColor='red'>
+        <Flex as="nav" align="center" justify="space-between" p={4} bg="black" color="white" borderBottom='1px solid' borderColor='red'>
             <Link href="/">
                 <Box>
 

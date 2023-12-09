@@ -26,7 +26,7 @@ function Testimonials() {
         }
 
         try {
-            getTestimonials = await axios(config)
+            let getTestimonials = await axios(config)
             setTestimonials(getTestimonials.data.items)
         } catch (error) {
             console.log(error)
@@ -47,6 +47,7 @@ function Testimonials() {
                             console.log(data)
                             return (
                                 <TestiBox
+                                    key={i}
                                     title={data.fields.name}
                                     desc={data?.fields?.descriptions}
                                 />

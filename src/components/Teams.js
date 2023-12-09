@@ -44,7 +44,7 @@ function Teams() {
 
     async function getUser() {
         let config = {
-            url:'https://randomuser.me/api/?results=12',
+            url:'https://randomuser.me/api/?results=8',
             method:'get',
             headers:{
                 'Content-Type':'application/json'
