@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Navbar() {
     return (
-        <Flex as="nav" align="center" justify="space-between" p={4} bg="black" color="white" borderBottom='1px solid' borderColor='red'>
+        <Flex as="nav" align="center" justify="space-between" p={4} bg="black" color="white" borderBottom='1px solid' borderColor='gray'>
             <Link href="/">
                 <Box marginLeft='10px'>
                     <Image src="https://static.vecteezy.com/system/resources/previews/009/267/549/original/music-notes-icon-free-png.png" maxHeight='45px'/>

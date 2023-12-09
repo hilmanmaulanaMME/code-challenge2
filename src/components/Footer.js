@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Footer() {
     return (
-        <Flex as="foot" align="center" justify="center" p={4} bg="black" color="white" borderTop='1px red solid'>
+        <Flex as="foot" align="center" justify="center" p={4} bg="black" color="white" borderTop='1px gray solid'>
             <Box marginRight='10px'>
                 <Link href="/">
                     <Image src="https://static.vecteezy.com/system/resources/previews/009/267/549/original/music-notes-icon-free-png.png" maxHeight='45px'/>
