@@ -36,7 +36,7 @@ function Testimonials() {
     return (
         <Box bg='black' color='white'>
             <Box>
-                <Box textAlign='center' paddingTop='30px'>
+                <Box textAlign='center'>
                     <Text fontSize='3xl' as='b'>Testimonials</Text>
                 </Box>
             </Box>
