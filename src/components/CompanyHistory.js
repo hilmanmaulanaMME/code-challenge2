@@ -23,7 +23,7 @@ function CompanyHistory() {
                     </Box>
                     <Box>
                         <Heading as='b'>2021</Heading>
-                        <Text mb='8' mt='3'>Audio Signature officially opens its doors, providing recording services to local musicians and artists. Positive reviews and word-of-mouth contribute to the studio's early success.</Text>
+                        <Text mb='8' mt='3'>Audio Signature officially opens its doors, providing recording services to local musicians and artists. Positive reviews and word-of-mouth contribute to the studio early success.</Text>
                     </Box>
                     <Box>
                         <Heading as='b'>2022</Heading>
