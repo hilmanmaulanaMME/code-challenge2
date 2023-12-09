@@ -5,11 +5,11 @@ function CardBox({title,excerpt,desc,id,thumbnail,hreflink}) {
     return (
         <Card>
             <CardHeader>
-                <Heading size='md'>{title}</Heading>
+                <Heading size='md' textAlign='center'>{title}</Heading>
             </CardHeader>
-            <CardBody>
-                <Image src={thumbnail} maxW='100%' ratio={4 / 3} maxH='250px'/>
-                <Text>{desc}</Text>
+            <CardBody justifyContent='center'>
+                <Image src={thumbnail} maxW='100%' ratio={4 / 3} maxH='250px' borderRadius='15px'/>
+                <Text marginTop='10px'>{desc}</Text>
             </CardBody>
             <CardFooter>
                 <Link href={`${hreflink}`}>

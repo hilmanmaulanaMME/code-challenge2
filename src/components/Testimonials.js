@@ -1,6 +1,6 @@
 "use client"
 import { Flex, SimpleGrid, Box, Text } from "@chakra-ui/react"
-import CardBox from "./CardBox"
+import TestiBox from "./TestiBox"
 import { useState, useEffect } from "react"
 import axios from "axios"
 
@@ -41,12 +41,12 @@ function Testimonials() {
                 </Box>
             </Box>
             <Flex justify='center'>
-                <SimpleGrid spacing='30px' margin='30px' columns={[1,2,3]}>
+                <SimpleGrid spacing='30px' margin='30px' columns={[1,2,3,4]}>
                     {
                         Testimonials?.map((data,i) => {
                             console.log(data)
                             return (
-                                <CardBox
+                                <TestiBox
                                     title={data.fields.name}
                                     desc={data?.fields?.descriptions}
                                 />

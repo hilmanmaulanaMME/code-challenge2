@@ -1,6 +1,6 @@
 "use client"
 import { Flex, SimpleGrid, Box, Text } from "@chakra-ui/react"
-import ImageBox from "./ImageBox"
+import TeamsBox from "./TeamsBox"
 import { useState } from "react"
 import axios from "axios"
 import { useEffect } from "react"
@@ -44,7 +44,7 @@ function Teams() {
 
     async function getUser() {
         let config = {
-            url:'https://randomuser.me/api/?results=10',
+            url:'https://randomuser.me/api/?results=12',
             method:'get',
             headers:{
                 'Content-Type':'application/json'
@@ -63,7 +63,7 @@ function Teams() {
         <Box bg='black' color='white'>
             <Box>
                 <Box textAlign='center' paddingTop='30px'>
-                    <Text fontSize='3xl' as='b'>Teams</Text>
+                    <Text fontSize='3xl' as='b'>Our Teams</Text>
                 </Box>
             </Box>
             <Flex justify='center'>
@@ -71,15 +71,12 @@ function Teams() {
                     {
                         dataOk?.map((data, i) => {
                             return (
-                                <ImageBox
+                                <TeamsBox
                                     key={i}
                                     firstName={data.name.first}
                                     lastName={data.name.last}
-                                    desc={data.email}
-                                    // excerpt={data.excerpt}
-                                    // id={data.id}
+                                    email={data.email}
                                     thumbnail={data.picture.large}
-                                    // hreflink={`/teams/${data.id}`}
                                 />
                             )
                         })

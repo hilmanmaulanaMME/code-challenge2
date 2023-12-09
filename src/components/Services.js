@@ -35,29 +35,30 @@ function Services() {
     }
 
     return (
-        <Box bg='black' color='white'>
-            <Box>
-                <Box textAlign='center' paddingTop='30px'>
-                    <Text fontSize='3xl' as='b'>Services</Text>
+            <Box bg='black' color='white'>
+                <Box>
+                    <Box textAlign='center' paddingTop='30px'>
+                        <Text fontSize='3xl' as='b'>Services</Text>
+                    </Box>
                 </Box>
-            </Box>
-            <Flex justify='center'>
-                <SimpleGrid spacing='30px' margin='30px' columns={[1,2,3]}>
-                    {
+                <Flex justify='center'>
+                    <SimpleGrid spacing='30px' margin='30px' columns={[1,2,3]}>
+                        {
                         Services?.map((data,i) => {
                             console.log(data)
-                            return (
+                                return (
                                 <CardBox
                                     title={data.fields.services}
                                     desc={data?.fields?.descriptions}
                                     thumbnail={data.fields.image.fields.file.url}
+                                    hreflink='./services'
                                 />
-                            )
-                        })
-                    }
-                </SimpleGrid>
-            </Flex>
-        </Box>
+                                )
+                            })
+                        }
+                    </SimpleGrid>
+                </Flex>
+            </Box>
     )
 }
 
