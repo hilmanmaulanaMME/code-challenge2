@@ -11,7 +11,7 @@ function CardBox({title,excerpt,desc,id,thumbnail,hreflink}) {
                 <Flex justify='center'>
                     <Image src={thumbnail} maxW='100%' ratio={4 / 3} maxH='250px' borderRadius='15px' alt='img-CardBox'/>
                 </Flex>
-                <Text marginTop='10px'>{desc}</Text>
+                <Text marginTop='10px' textAlign='justify'>{desc}</Text>
             </CardBody>
             <CardFooter  justify='center'>
                 <Link href={`${hreflink}`}>

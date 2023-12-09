@@ -12,7 +12,7 @@ function TeamsBox({firstName, lastName ,excerpt,email,id,thumbnail,hreflink}) {
             </CardHeader>
             <CardBody>
                 <Flex justify='center'>
-                    <Image borderRadius='full' boxSize='150px'src={thumbnail} alt='img-TeamsBox'/>
+                    <Image borderRadius='full' boxSize='125px'src={thumbnail} alt='img-TeamsBox'/>
                 </Flex>
             </CardBody>
             <CardFooter>

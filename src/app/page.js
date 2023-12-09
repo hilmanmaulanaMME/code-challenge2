@@ -14,7 +14,6 @@ function page() {
             <CompanyOverview/>
             <Services/>
             <Testimonials/>
-            <Teams/>
             <Footer/>
         </>
     )

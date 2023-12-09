@@ -62,7 +62,7 @@ function Teams() {
     return (
         <Box bg='black' color='white'>
             <Box>
-                <Box textAlign='center' paddingTop='30px'>
+                <Box textAlign='center'>
                     <Text fontSize='3xl' as='b'>Our Teams</Text>
                 </Box>
             </Box>

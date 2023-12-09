@@ -50,6 +50,7 @@ function Testimonials() {
                                     key={i}
                                     title={data.fields.name}
                                     desc={data?.fields?.descriptions}
+                                    thumbnail={data.fields.image.fields.file.url}
                                 />
                             )
                         })
