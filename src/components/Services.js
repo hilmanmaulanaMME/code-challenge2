@@ -19,7 +19,7 @@ function Services() {
 
     async function getServices() {
         let config = {
-            url:'http://localhost:3000/api/contentful-services/',
+            url:'/api/contentful-services/',
             method:'get',
             headers:{
                 'Content-Type':'application/json'

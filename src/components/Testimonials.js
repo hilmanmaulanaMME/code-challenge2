@@ -18,7 +18,7 @@ function Testimonials() {
 
     async function getTestimonials() {
         let config = {
-            url:'http://localhost:3000/api/contentful-testimonials/',
+            url:'/api/contentful-testimonials/',
             method:'get',
             headers:{
                 'Content-Type':'application/json'
