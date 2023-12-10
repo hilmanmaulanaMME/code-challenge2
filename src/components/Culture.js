@@ -2,7 +2,7 @@ import { Heading, Text, Flex, Box, SimpleGrid } from '@chakra-ui/react';
 
 function Culture() {
     return (
-        <Box  bg="black" color="white" height="auto" >
+        <Box  bg="black" color="white" height="auto" paddingTop='40px'>
             <Heading as="h1" fontSize={{ base: '2xl', md: '4xl' }} mb={4} textAlign="center">
                 Our Culture
             </Heading>
